@@ -12,7 +12,7 @@ def create_token(sender_email, secret_key):
 
 def handle_email_request(request, secret_key):
     
-    url = "http://127.0.0.1:5001/send-email";
+    url = "https://TheByteMagusCo.pythonanywhere.com/send-email";
     
     data = request.get_json()
     sender_name = data.get('sender_name')
@@ -36,4 +36,4 @@ def handle_email_request(request, secret_key):
     })
     
     
-    return response.json()
+    return response.status_code
