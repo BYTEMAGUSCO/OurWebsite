@@ -1,3 +1,33 @@
 <section>
-    <p>contact us section</p>
+    <div>
+        <h1>Contact Us!</h1>
+        <form action="" method="" id="contact-form">
+            <div>
+                <p>Email:</p>
+                <input type="email" name="sender_email" id="sender_email" required>
+            </div>
+            <div>
+                <p>Name: </p>
+                <input type="text" name="sender_name" id="sender_name" required>
+            </div>
+            <div>
+                <p>Contact Number (Optional): </p>
+                <input type="tel" name="sender_phone_no" id="sender_phone_no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div>
+                <p>What Services are you interested?</p>
+                <select name="sender_service_interested" id="sender_service_interested">
+                    <option value="">--Select One--</option>
+                    <option value="1">Web Systems Development and Designing</option>
+                    <option value="2">Computer System Support and Management</option>
+                    <option value="3">Network Support and Management</option>
+                </select>
+            </div>
+            <div>
+                <p>Enter your message for us below</p>
+                <textarea name="sender_body" id="sender_body" required></textarea>
+            </div>
+            <input type="submit" value="Submit Message" id="submit" name="submit">
+        </form>
+    </div>
 </section>
