@@ -1,0 +1,9 @@
+.contact-text-area{
+    width: clamp(320px, 80vw, 1497px );
+    border-radius: 1rem;
+}
+
+.main-form{
+    margin: 0;
+    padding: 0;
+}
