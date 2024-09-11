@@ -1,3 +1,11 @@
-<nav>
-    <p>This is nav bar</p>
+<nav class="sticky top-0 left-0 bg-white shadow-xl lg:flex lg:justify-between lg:p-6 lg:px-12" style="z-index: 1;">
+    <div class="flex items-center px-8 justify-between py-4 lg:w-full lg:justify-start lg:p-0">
+        <a href="#home" class="font-bold">ByteMagus Co.</a>
+        <i class="fa-solid fa-bars border-black border-2 shadow-md lg:invisible visible" style="padding: .25rem; border-radius: 10px" id="carret-btn"></i>
+    </div>
+    <ul class="bg-gray-100 w-full flex flex-col hidden absolute lg:relative lg:flex lg:flex-row lg:items-center lg:bg-white lg:justify-end lg:gap-8" id="nav-dropdown" style="z-index: 1;">
+        <li class="w-full h-full px-8 py-2 lg:p-0 lg:w-max lg:h-max lg:flex lg:items-center"><a href="#about-us" class="nav-items">About Us</a></li>
+        <li class="w-full h-full px-8 py-2 lg:p-0 lg:w-max lg:h-max lg:flex lg:items-center"><a href="#services-offered" class="nav-items">Services Offered</a></li>
+        <li class="w-full h-full px-8 pt-4 lg:p-0 pb-10 lg:w-max lg:h-max lg:flex lg:items-center" ><a href="#contact-us" class="text-white nav-btn hover:text-4xl" style="padding: 0.5rem; background-color: #0D09B9; box-shadow: 0px .5rem #020155; border-radius: 1rem">Contact Us</a></li>
+    </ul>
 </nav>
