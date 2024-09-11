@@ -15,8 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94d8d33acf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/general_styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/contact_form_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_bar_styles.css') }}">
 
 </head>
 <body>
@@ -25,6 +27,8 @@
     {% block content %}{% endblock %}
     {% block footer %}{% endblock %}
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="{{ url_for('static', filename='js/contact_us_script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/nav_bar_script.js') }}"></script>
 </body>
 </html>

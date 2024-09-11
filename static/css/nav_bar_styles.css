@@ -1,0 +1,13 @@
+.nav-items:hover{
+    border-bottom: 5px solid black;
+    transition: all ease-in-out 100ms;
+}
+
+.nav-btn:hover{
+    font-size: 2.25rem;
+    transition: all ease-in-out 100ms;  
+}
+
+.nav-btn, .nav-items{
+    transition: all ease-in-out 100ms; 
+}

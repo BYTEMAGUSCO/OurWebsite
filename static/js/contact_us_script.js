@@ -9,6 +9,11 @@ $(document).ready(()=>{
             "sender_body": $('#sender_body').val() 
         }
         $('#contact-form')[0].reset();
+        swal({
+            title: "Success!",
+            text: "Your message has been sent!",
+            icon: "success"
+        })
 
         e.preventDefault()  
         $.ajax({
@@ -19,7 +24,7 @@ $(document).ready(()=>{
             dataType: 'json'
         }).done((data)=>{
             if(data == 200){                
-                console.log()
+                
                 return
             }
 
