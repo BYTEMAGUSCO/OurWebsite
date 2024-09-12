@@ -1,5 +1,5 @@
 .contact-text-area{
-    width: clamp(320px, 80vw, 1497px );
+    width: clamp(320px, 80vw, 1000px );
     border-radius: 1rem;
 }
 

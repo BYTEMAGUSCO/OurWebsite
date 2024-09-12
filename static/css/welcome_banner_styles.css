@@ -1,0 +1,59 @@
+.btn-3d {
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s;
+}
+
+.btn-3d:hover {
+    transform: translateY(-3px);
+}
+
+.btn-3d:active {
+    transform: translateY(2px);
+}
+
+/* Facebook */
+.facebook {
+    background-color: #3b5998;
+    box-shadow: 0 5px 0 #2d4373, 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.facebook:hover {
+    box-shadow: 0 7px 0 #2d4373, 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Twitter */
+.twitter {
+    background-color: #1da1f2;
+    box-shadow: 0 5px 0 #1574aa, 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.twitter:hover {
+    box-shadow: 0 7px 0 #1574aa, 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Instagram */
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0 5px 0 #b23a67, 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.instagram:hover {
+    box-shadow: 0 7px 0 #b23a67, 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* LinkedIn */
+.linkedin {
+    background-color: #0077b5;
+    box-shadow: 0 5px 0 #005582, 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.linkedin:hover {
+    box-shadow: 0 7px 0 #005582, 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* YouTube */
+.youtube {
+    background-color: #ff0000;
+    box-shadow: 0 5px 0 #b20000, 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.youtube:hover {
+    box-shadow: 0 7px 0 #b20000, 0 12px 20px rgba(0, 0, 0, 0.3);
+}
