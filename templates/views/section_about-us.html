@@ -1,3 +1,23 @@
-<section id="about-us" style="z-index: 0;">
-    <p>About Us Section</p>
+<section id="about-us" style="z-index: 0;" class="my-4 flex flex-col items-center p-8 xl:px-24">
+    <h1 class="font-bold md:text-5xl text-3xl lg:text-6xl pb-24">About Us</h1>
+    <div class="flex flex-col items-center md:flex-row xl:w-3/4 xl:justify-center xl:gap-10">
+        <object type="image/svg+xml" data={{ url_for('static', filename='img/about_us.svg')}} class="w-60 md:w-72 lg:w-96 p-0 m-0"></object>
+        <div>
+            <h1 class="text-2xl font-bold uppercase text-center lg:text-4xl pb-10">Who, What , Where ,When and Why is ByteMagus</h1>
+            <p class="text-lg text-justify lg:text-xl leading-loose">BYTEMAGUS CO. is a tech company founded by Julette Anthony C. Peque and Romnick R. Canonigo, focused on advancing technological modernization in the Philippines. Originally a passion project, the company specializes in web systems development, computer system support and management, and network support. The name "BYTEMAGUS" represents their innovative and playful approach, symbolizing a "computer wizard" dedicated to technological progress.</p>
+        </div>
+    </div>
+    <div class="flex flex-col items-center xl:w-3/4 xl:gap-10 mt-6">
+        <object data="{{ url_for('static', filename='img/mission_vision_svg.html') }}"  type="image/svg+xml" class="w-96 mission-vision overscroll-none overflow-hidden " frameborder="0"></object>
+        <div class="flex flex-col gap-10">
+            <div>
+                <h1 class="text-2xl font-bold uppercase text-center lg:text-4xl pb-10">Vision</h1>
+                <p class="text-lg text-justify lg:text-xl leading-10">To become a leading force in the technological modernization of the Philippines by 2030, known for our expertise, innovation, and commitment to excellence. We envision a future where BYTEMAGUS CO. plays a pivotal role in shaping a digitally advanced nation, bridging the gap between technology and its practical applications for every Filipino.</p>
+            </div>
+            <div>
+                <h1 class="text-2xl font-bold uppercase text-center lg:text-4xl pb-10">Mission</h1>
+                <p class="text-lg text-justify lg:text-xl">To deliver cutting-edge technological solutions that empower businesses and individuals in the Philippines. We aim to provide exceptional services in web systems development, computer support, and network management, fostering innovation and driving digital transformation across the country.</p>
+            </div>
+        </div>
+    </div>
 </section>
