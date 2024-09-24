@@ -1,3 +1,32 @@
-<section id="services-offered" style="z-index: 0;">
-    <p>SERVICES OFFERED SECTION</p>
+<section id="services_offered" style="z-index: 0;" class="my-4 flex flex-col items-center p-8 xl:px-24">
+
+    <!-- Centered Heading -->
+    <h1 class="font-bold md:text-5xl text-3xl lg:text-6xl pb-24">What We Offer?</h1>
+
+    <div class="flex flex-col items-center md:flex-row xl:w-3/4 xl:justify-center xl:gap-10 mb-1">
+        <div class="relative w-full max-w-[600px] h-[1000px] carousel-container mb-4">
+            <div class="carousel-slide h-full">
+                <div class="carousel-item flex items-center justify-center h-full">
+                    <object 
+                        data="{{ url_for('static', filename='img/services_responsive_design.html') }}" 
+                        type="image/svg+xml" 
+                        class="w-full h-[800px] mission-vision overscroll-none overflow-hidden" 
+                        frameborder="0"></object> <!-- Set height of object -->
+                </div>
+                <div class="carousel-item flex items-center justify-center h-full">
+                    <img src="image2.png" alt="Image 2" class="w-full h-[800px] object-cover"> <!-- Same height for images -->
+                </div>
+                <div class="carousel-item flex items-center justify-center h-full">
+                    <img src="image3.png" alt="Image 3" class="w-full h-[800px] object-cover"> <!-- Same height for images -->
+                </div>
+            </div>
+            <!-- Prev and Next Buttons -->
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+        </div>
+    </div>
+    <!-- Separate Description Section -->
+    <div id="carousel-description" class="text-lg text-justify lg:text-xl leading-10"">
+        <!-- Description will be updated dynamically -->
+    </div>
 </section>
