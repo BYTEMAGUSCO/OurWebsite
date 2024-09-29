@@ -1,22 +1,44 @@
-<section id="about-us" style="z-index: 0;" class="my-4 flex flex-col items-center p-8 xl:px-24">
-    <h1 class="font-bold md:text-5xl text-3xl lg:text-6xl pb-24">About Us</h1>
-    <div class="flex flex-col items-center md:flex-row xl:w-3/4 xl:justify-center xl:gap-10">
-        <object type="image/svg+xml" data={{ url_for('static', filename='img/about_us.svg')}} class="w-60 md:w-72 lg:w-96 p-0 m-0"></object>
-        <div>
-            <h1 class="text-2xl font-bold uppercase text-center lg:text-4xl pb-10">Who, What , Where ,When and Why is ByteMagus</h1>
-            <p class="text-lg text-justify lg:text-xl leading-loose">BYTEMAGUS CO. is a tech company founded by Julette Anthony C. Peque and Romnick R. Canonigo, focused on advancing technological modernization in the Philippines. Originally a passion project, the company specializes in web systems development, computer system support and management, and network support. The name "BYTEMAGUS" represents their innovative and playful approach, symbolizing a "computer wizard" dedicated to technological progress.</p>
-        </div>
+<section id="about" class="my-8 flex flex-col items-center p-4 xl:px-8 ">
+
+    <!-- Upper section with title and founders' description -->
+    <div class="flex flex-col items-center md:flex-row xl:w-4/5 xl:justify-center xl:gap-12 gap-8 mt-10">
+        <!-- SVG Object -->
+        <object type="image/svg+xml" data="{{ url_for('static', filename='img/about-us/about_us.svg') }}" class="responsive-svg transform hover:scale-105 transition-transform duration-300 mt-5"></object>
+
+        
+    <!-- Company Info -->
+    <div class="max-w-full text-center md:text-left md:max-w-md -mt-5 md:mt-5">
+        <h2 class="text-lg font-extrabold uppercase text-indigo-800 lg:text-3xl pb-4">Who, What, Where, When, and Why is ByteMagus</h2>
+        <p class="text-sm lg:text-base leading-6 lg:leading-7 text-gray-700">
+            BYTEMAGUS CO. is a tech company founded by Julette Anthony C. Peque and Romnick R. Canonigo, focused on advancing technological modernization in the Philippines. Originally a passion project, the company specializes in web systems development, computer system support and management, and network support. The name "BYTEMAGUS" represents their innovative and playful approach, symbolizing a "computer wizard" dedicated to technological progress.
+        </p>
     </div>
-    <div class="flex flex-col items-center xl:w-3/4 xl:gap-10 mt-6">
-        <object data="{{ url_for('static', filename='img/mission_vision_svg.html') }}"  type="image/svg+xml" class="w-96 mission-vision overscroll-none overflow-hidden " frameborder="0"></object>
-        <div class="flex flex-col gap-10">
-            <div>
-                <h1 class="text-2xl font-bold uppercase text-center lg:text-4xl pb-10">Vision</h1>
-                <p class="text-lg text-justify lg:text-xl leading-10">To become a leading force in the technological modernization of the Philippines by 2030, known for our expertise, innovation, and commitment to excellence. We envision a future where BYTEMAGUS CO. plays a pivotal role in shaping a digitally advanced nation, bridging the gap between technology and its practical applications for every Filipino.</p>
+
+    </div>
+    
+    <!-- Lower section with mission and vision -->
+    <div class="flex flex-col items-center xl:w-4/5 gap-8 mt-8">
+        <!-- SVG for Mission & Vision -->
+        <div class="svg-container">
+            <object data="{{ url_for('static', filename='img/about-us/mission_vision_svg.html') }}" type="image/svg+xml" class="mission-vision w-72 lg:w-96 transform hover:scale-110 transition-transform duration-300"></object>
+        </div>
+        
+        <!-- Vision and Mission Text -->
+        <div class="grid gap-8 text-gray-700 w-full max-w-4xl">
+            <!-- Vision -->
+            <div class="bg-white p-6  hover:shadow-lg transform hover:-translate-y-1 transition-transform duration-300 -mt-7 md:mt-0">
+                <h2 class="text-lg font-extrabold uppercase text-indigo-800 lg:text-2xl pb-4 text-left">Our Vision</h2>
+                <p class="text-sm lg:text-base leading-6 lg:leading-7 text-left">
+                    To become a leading force in the technological modernization of the Philippines by 2030, known for our expertise, innovation, and commitment to excellence. We envision a future where BYTEMAGUS CO. plays a pivotal role in shaping a digitally advanced nation, bridging the gap between technology and its practical applications for every Filipino.
+                </p>
             </div>
-            <div>
-                <h1 class="text-2xl font-bold uppercase text-center lg:text-4xl pb-10">Mission</h1>
-                <p class="text-lg text-justify lg:text-xl">To deliver cutting-edge technological solutions that empower businesses and individuals in the Philippines. We aim to provide exceptional services in web systems development, computer support, and network management, fostering innovation and driving digital transformation across the country.</p>
+            
+            <!-- Mission -->
+            <div class="bg-white p-6  hover:shadow-lg transform hover:-translate-y-1 transition-transform duration-300 mb-8 -mt-10 md:mt-0">
+                <h2 class="text-lg font-extrabold uppercase text-indigo-800 lg:text-2xl pb-4 text-left">Our Mission</h2>
+                <p class="text-sm lg:text-base leading-6 lg:leading-7 text-left">
+                    To deliver cutting-edge technological solutions that empower businesses and individuals in the Philippines. We aim to provide exceptional services in web systems development, computer support, and network management, fostering innovation and driving digital transformation across the country.
+                </p>
             </div>
         </div>
     </div>

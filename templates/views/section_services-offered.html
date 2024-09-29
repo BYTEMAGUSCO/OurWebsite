@@ -1,32 +1,45 @@
-<section id="services_offered" style="z-index: 0;" class="my-4 flex flex-col items-center p-8 xl:px-24">
+<section id="services" class="my-8 flex flex-col items-center p-8 xl:px-24 ">
 
-    <!-- Centered Heading -->
-    <h1 class="font-bold md:text-5xl text-3xl lg:text-6xl pb-24">What We Offer?</h1>
-
-    <div class="flex flex-col items-center md:flex-row xl:w-3/4 xl:justify-center xl:gap-10 mb-1">
-        <div class="relative w-full max-w-[600px] h-[1000px] carousel-container mb-4">
-            <div class="carousel-slide h-full">
-                <div class="carousel-item flex items-center justify-center h-full">
-                    <object 
-                        data="{{ url_for('static', filename='img/services_responsive_design.html') }}" 
-                        type="image/svg+xml" 
-                        class="w-full h-[800px] mission-vision overscroll-none overflow-hidden" 
-                        frameborder="0"></object> <!-- Set height of object -->
-                </div>
-                <div class="carousel-item flex items-center justify-center h-full">
-                    <img src="image2.png" alt="Image 2" class="w-full h-[800px] object-cover"> <!-- Same height for images -->
-                </div>
-                <div class="carousel-item flex items-center justify-center h-full">
-                    <img src="image3.png" alt="Image 3" class="w-full h-[800px] object-cover"> <!-- Same height for images -->
-                </div>
+    <!-- Title that will change dynamically -->
+    <h2 id="carousel-title" class="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-5 text-center text-indigo-800 md:max-w-md mt-9 md:mt-10 ">
+        Web Systems Development and Designing
+    </h2>
+    
+    <!-- Carousel Container -->
+    <div class="relative w-full max-w-4xl mx-auto overflow-hidden">
+        <!-- Carousel items -->
+        <div id="carousel-items" class="flex transition-transform duration-500 pointer-events-none">
+            <!-- Item 1: Web Systems Development -->
+            <div class="w-full flex-shrink-0 text-center p-4">
+                <iframe src="{{ url_for('static', filename='img/carousel/service_1.html') }}" class="embedded-frame mb-4"></iframe>
             </div>
-            <!-- Prev and Next Buttons -->
-            <button class="carousel-button prev">&#10094;</button>
-            <button class="carousel-button next">&#10095;</button>
+
+            <!-- Item 2: Computer System Support -->
+            <div class="w-full flex-shrink-0 text-center p-4">
+                <iframe src="{{ url_for('static', filename='img/carousel/service_2.html') }}" class="embedded-frame mb-4"></iframe>
+            </div>
+
+            <!-- Item 3: Network Support and Management -->
+            <div class="w-full flex-shrink-0 text-center p-4">
+                <iframe src="{{ url_for('static', filename='img/carousel/service_3.html') }}" class="embedded-frame mb-4"></iframe>
+            </div>
         </div>
+        
+        <!-- Left Button -->
+        <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 text-black text-6xl font-bold p-8 hover:text-indigo-600 focus:outline-none transition-colors duration-300 z-10 pointer-events-auto">
+            &#60;
+        </button>
+
+        <!-- Right Button -->
+        <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 text-black text-6xl font-bold p-8 hover:text-indigo-600 focus:outline-none transition-colors duration-300 z-10 pointer-events-auto">
+            &#62;
+        </button>
+
     </div>
-    <!-- Separate Description Section -->
-    <div id="carousel-description" class="text-lg text-justify lg:text-xl leading-10"">
-        <!-- Description will be updated dynamically -->
-    </div>
+
+    <!-- Description that will change dynamically -->
+    <p id="carousel-description" class="text-base lg:text-lg mt-6 text-center text-gray-700 max-w-2xl mx-auto leading-7">
+        BYTEMAGUS CO. creates custom web systems with a focus on responsive design, ensuring optimal performance across devices. They emphasize aesthetic appeal, functionality, rigorous testing, SEO optimization, and seamless integration with business tools. Services include content management systems, e-commerce platforms, and custom web applications.
+    </p>
+    
 </section>

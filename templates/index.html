@@ -1,19 +1,8 @@
 {% extends "views/base.html" %}
 
-{% block navbar %}
-    {% include 'views/section_main-navbar.html' %}
-{% endblock %}
-
-{% block banner %}
-    {% include 'views/section_welcome-banner.html' %}
-{% endblock %}
-
 {% block content %}
+    {% include 'views/section_welcome-banner.html' %}
     {% include 'views/section_about-us.html' %}
     {% include 'views/section_services-offered.html' %}
     {% include 'views/section_contact-us.html' %}
-{% endblock %}
-
-{% block footer %}
-    {% include 'views/section_main-footer.html' %}
 {% endblock %}

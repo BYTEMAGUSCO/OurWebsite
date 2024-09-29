@@ -1,0 +1,99 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 0; /* Remove default margin from body */
+}
+
+nav {
+    padding: 0.25rem 0.5rem; /* Reduce top and bottom padding */
+    height: 40px; /* Set a fixed height */
+    margin-bottom: 0; /* Remove margin below the navbar */
+    position: fixed; /* Change to fixed positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the nav is above other elements */
+    background-color: white; /* Set a background color */
+    border-bottom: 2px solid black; /* Add a black line at the bottom */
+}
+
+/* Optional: Add a shadow effect when sticky */
+nav.sticky {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Optional: Set a background color */
+}
+
+.mobile-menu {
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Start invisible */
+    position: fixed; /* Fixed positioning for full screen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
+    z-index: 20; /* Higher z-index for overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Align items at the top */
+    visibility: hidden; /* Hidden by default */
+    padding: 10px; /* Reduced padding for the left side */
+}
+
+.mobile-menu.open {
+    opacity: 1; /* Make visible */
+    visibility: visible; /* Make visible */
+}
+
+.mobile-menu a {
+    margin: 10px 0; /* Increase spacing between links */
+    font-size: 1.25rem; /* Increase font size */
+    display: flex;
+    align-items: center; /* Center the icon and text */
+}
+
+.mobile-menu a i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Ensure no margin at the top of the first section */
+#home {
+    margin-top: 0; /* Remove top margin */
+}
+
+
+
+
+/*SVG PHILIPPINE MAP*/
+.svg-container {
+    width: 200px; /* Default width */
+    height: 250px; /* Default height */
+    overflow: hidden; /* Hide any overflow */
+    margin-bottom: -20px;
+}
+
+.mission-vision {
+    width: 100%; /* Make the object take the full width of the container */
+    height: 100%; /* Make the object take the full height of the container */
+    display: block; /* Remove the default inline display */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 600px) {
+    .svg-container {
+        width: 200px; /* Increased width for medium screens */
+        height: 300px; /* Increased height for medium screens */
+    }
+}
+
+@media (min-width: 900px) {
+    .svg-container {
+        width: 300px; /* Increased width for large screens */
+        height: 400px; /* Increased height for large screens */
+    }
+}

@@ -1,18 +1,56 @@
-<section id="home" class="flex flex-col mt-8 items-center gap-8 md:mt-0 md:p-8 md:gap-12 lg:gap-24 lg:p-16" style="z-index: 0;">
-    <div class="text-center flex flex-col gap-4">
-        <h1 class="text-3xl font-bold md:text-4xl lg:text-7xl">We are ByteMagus Co.</h1>
-        <p class="text-xl font-bold md:text-2xl md:text-3xl">Building the Future Byte by Byte.</p>
+<section id="home" class="relative flex flex-col items-center justify-center p-2 md:p-4 gap-4 md:gap-6 bg-teal-500 text-white w-full min-h-screen" style="background-color: #000000;">
+    <!-- Layered SVG Background -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+        <object type="image/svg+xml" data="{{ url_for('static', filename='img/welcome-banner/bg.svg') }}" class="parallax-layer w-full h-full" data-speed="0.5"></object>
+        <object type="image/svg+xml" data="{{ url_for('static', filename='img/welcome-banner/mountains.svg') }}" class="parallax-layer absolute inset-0 w-full h-full" data-speed="0.7"></object>
+        <object type="image/svg+xml" data="{{ url_for('static', filename='img/welcome-banner/trees.svg') }}" class="parallax-layer absolute inset-0 w-full h-full" data-speed="0.9"></object>
+        <object type="image/svg+xml" data="{{ url_for('static', filename='img/welcome-banner/ourstars.html') }}" class="parallax-layer absolute inset-0 w-full h-full" data-speed="1"></object>
     </div>
-    <div class="flex flex-col-reverse justify-center items-center gap-8 md:flex-row lg:gap-24">
-        <div class="flex flex-col gap-6">
-            <p class="text-xl text-center font-bold lg:text-3xl">We offer software and network related <br / class="invisible lg:visible"> <span>services at a reasonable price.</span></p>
-            <div class="flex flex-col justify-center text-center gap-2">
-                <p class="text-base lg:text-2xl">Visit us on our social media links</p>
-                <div class="flex justify-center gap-2">
-                    <button class="btn-3d facebook w-8 h-8 p-8 flex justify-center items-center"><i class="fab fa-facebook-f"></i></button>
+
+    <div class="flex flex-col-reverse justify-center items-center gap-4 md:flex-row md:gap-12 lg:gap-16 z-10 w-full">
+        <!-- Text Content -->
+        <div class="flex flex-col items-center text-center gap-1 md:gap-2 md:w-1/2">
+            <p class="text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl max-w-xs md:max-w-md lg:max-w-xl xl:max-w-3xl text-center">
+                We are BYTEMAGUS CO.
+            </p>
+            <p class="text-base md:text-xl lg:text-2xl xl:text-3xl mb-8">Building the future byte by byte.</p>
+            <p class="text-base md:text-xl lg:text-2xl xl:text-2xl mb-5">We create affordable software and network solutions for everyone.</p>
+            <div class="flex flex-col items-center gap-1">
+                <p class="text-sm md:text-lg lg:text-xl xl:text-2xl mb-5">Visit us on our social media links!</p>
+                <div class="flex justify-center gap-4 md:gap-6">
+                    <a href="https://www.facebook.com/ByteMagusCo/" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-3d facebook w-12 h-12 p-3 flex justify-center items-center xl:w-14 xl:h-14"
+                            style="background-color: #3b5998; /* Facebook color */
+                            box-shadow: 0 5px 0 #2d4373; /* Darker shadow for Facebook */
+                            border: none; border-radius: 50%; cursor: pointer; 
+                            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;"
+                            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 0px #2d4373, 0px 12px 20px rgba(0, 0, 0, 0.2)';"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 0 #2d4373, 0 10px 15px rgba(0, 0, 0, 0.1)';"
+                            onmousedown="this.style.transform='translateY(2px)'; this.style.boxShadow='0 2px 0 #2d4373, 0 6px 10px rgba(0, 0, 0, 0.1)';"
+                            onmouseup="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 0px #2d4373, 0px 12px 20px rgba(0, 0, 0, 0.2)';">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                    </a>       
+                    <button class="btn-3d linkedin w-12 h-12 p-3 flex justify-center items-center xl:w-14 xl:h-14"
+                        style="background-color: #0077b5; /* LinkedIn color */
+                        box-shadow: 0 5px 0 #005582; /* Darker shadow for LinkedIn */
+                        border: none; border-radius: 50%; cursor: pointer; 
+                        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;"
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 0px #005582, 0px 12px 20px rgba(0, 0, 0, 0.2)';"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 0 #005582, 0 10px 15px rgba(0, 0, 0, 0.1)';"
+                        onmousedown="this.style.transform='translateY(2px)'; this.style.boxShadow='0 2px 0 #005582, 0 6px 10px rgba(0, 0, 0, 0.1)';"
+                        onmouseup="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 0px #005582, 0px 12px 20px rgba(0, 0, 0, 0.2)';">
+                        <i class="fab fa-linkedin-in"></i>
+                    </button>
                 </div>
             </div>
+            
         </div>
-        <object type="image/svg+xml" data={{ url_for('static', filename='img/character353.svg') }} class="w-60 md:w-72 lg:w-96 p-4 "></object>
+
+    <!-- Right Container with Flymagus.html Embedded, Full Height Container -->
+    <div class="flymagus-box -mb-4">
+        <iframe src="{{ url_for('static', filename='img/welcome-banner/Flymagus.html') }}" class="embedded-frame"></iframe>
+    </div>
+
     </div>
 </section>

@@ -1,0 +1,60 @@
+.flymagus-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%; /* Default width */
+    height: 60vh; /* Default height */
+    background-color: transparent; /* Transparent background */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* For medium screens (tablets, etc.) */
+@media (max-width: 1024px) {
+    .flymagus-box {
+        width: 40%; /* Slightly larger width on medium screens */
+        height: 70vh; /* Increase height */
+    }
+}
+
+/* For small screens (mobile devices) */
+@media (max-width: 768px) {
+    .flymagus-box {
+        width: 90%; /* Increase width on small screens */
+        height: 50vh; /* Increase height */
+        margin-bottom: -60px;
+    }
+}
+
+/* For extra small screens (small mobile devices) */
+@media (max-width: 480px) {
+    .flymagus-box {
+        width: 90%; /* Almost full width */
+        height: 48vh; /* Maximize the height */
+        margin-bottom: -60px;
+    }
+}
+
+
+/* For extra small screens (small mobile devices) */
+@media (max-width: 375px) {
+    .flymagus-box {
+        width: 90%; /* Almost full width */
+        height: 50vh; /* Maximize the height */
+        margin-bottom: -60px;
+    }
+}
+
+.embedded-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden; /* Ensure the embedded frame hides its own overflow */
+    /* Optional: Use these properties if the scrollbar still appears */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* Hide scrollbars for webkit browsers (Chrome, Safari) */
+.embedded-frame::-webkit-scrollbar {
+    display: none;
+}

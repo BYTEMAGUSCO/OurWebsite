@@ -1,35 +1,52 @@
-<section class="p-8" id="contact-us" style="z-index: 0;">
-    <div class="flex items-center justify-center">
-        <form action="" method="" id="contact-form" class="flex flex-col gap-12 w-full md:w-min main-form">
-            <h1 class="font-bold md:text-5xl text-3xl lg:text-4xl">Contact Us!</h1>
-            <div>
-                <p class="text-2xl md:text-3xl lg:text-3xl">*Email:</p>
-                <input type="email" name="sender_email" id="sender_email" required class=" border-b-4 border-black outline-none text-xl w-full md:w-full lg:text-2xl" placeholder="JuanDelaCruz@gmail.com">
+<section class="p-4" id="contact" style="z-index: 0 ;" >
+    <div class="flex items-center justify-center mb-20 mt-10 md:mt-20">
+        <form action="" method="" id="contact-form" class="flex flex-col gap-4 w-full md:w-3/4 lg:w-1/2 main-form bg-white shadow-lg p-6 rounded-lg">
+            <h1 class="font-bold text-2xl md:text-4xl lg:text-3xl text-center text-indigo-800 mb-4">Contact Us!</h1>
+            
+            <div class="flex flex-col gap-2">
+                <label for="sender_email" class="text-lg md:text-xl lg:text-2xl font-semibold">*Email:</label>
+                <input type="email" name="sender_email" id="sender_email" required class="border-b-2 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 outline-none text-lg lg:text-xl w-full p-2 transition duration-200 ease-in-out" placeholder="JuanDelaCruz@gmail.com">
             </div>
-            <div class="xl:flex xl:w-full xl:justify-between xl:gap-8 ">
-                <div class="xl:w-full xl:pb-0 pb-10">
-                    <p class="text-2xl md:text-3xl lg:text-3xl">*Name: </p>
-                    <input type="text" name="sender_name" id="sender_name" class=" border-b-4 border-black outline-none text-xl w-full md:w-full lg:text-3xl" placeholder="Juan Dela Cruz" required>
+
+            <div class="flex flex-col lg:flex-row lg:gap-4 gap-2">
+                <div class="flex flex-col w-full">
+                    <label for="sender_name" class="text-lg md:text-xl lg:text-2xl font-semibold">*Name:</label>
+                    <input type="text" name="sender_name" id="sender_name" required class="border-b-2 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 outline-none text-lg lg:text-xl w-full p-2 transition duration-200 ease-in-out" placeholder="Juan Dela Cruz">
                 </div>
-                <div class="xl:w-full">
-                    <p class=" text-2xl md:text-3xl lg:text-3xl">Contact No: </p>
-                    <input type="tel" name="sender_phone_no" id="sender_phone_no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class=" border-b-4 border-black outline-none text-xl w-full md:w-full lg:text-3xl " placeholder="9XX-XXX-XXXX">
+                <div class="flex flex-col w-full">
+                    <label for="sender_phone_no" class="text-lg md:text-xl lg:text-2xl font-semibold">Contact No:</label>
+                    <input type="tel" name="sender_phone_no" id="sender_phone_no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="border-b-2 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 outline-none text-lg lg:text-xl w-full p-2 transition duration-200 ease-in-out" placeholder="9XX-XXX-XXXX">
                 </div>
             </div>
-            <div>
-                <p class=" pb-10 text-2xl md:text-3xl lg:text-3xl">*What Services are you interested?</p>
-                <select name="sender_service_interested" id="sender_service_interested" class="border-b-4 border-black outline-none text-xl w-full  md:text-3xl md:w-auto lg:w-full lg:text-3xl">
+
+            <div class="flex flex-col gap-2">
+                <label for="sender_service_interested" class="text-lg md:text-xl lg:text-2xl font-semibold">*What services are you interested in?</label>
+                <select name="sender_service_interested" id="sender_service_interested" class="border-b-2 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 outline-none text-lg md:text-xl lg:text-xl w-full p-2 transition duration-200 ease-in-out">
                     <option value="">--Select One--</option>
                     <option value="1">Web Systems Development and Designing</option>
                     <option value="2">Computer System Support and Management</option>
                     <option value="3">Network Support and Management</option>
                 </select>
             </div>
-            <div class="flex flex-col gap-8 ">
-                <p class="text-2xl md:text-3xl lg:text-3xl">*Enter your message for us below</p>
-                <textarea name="sender_body" id="sender_body" required class=" border-4 border-black h-72 text-xl contact-text-area md:text-2xl lg:text-3xl self-center lg:self-start" style="text-indent: 1rem"></textarea>
+
+            <div class="flex flex-col gap-2">
+                <label for="sender_body" class="text-lg md:text-xl lg:text-2xl font-semibold">*Enter your message for us below:</label>
+                <textarea name="sender_body" id="sender_body" required class="border-2 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 h-32 text-lg md:text-xl lg:text-2xl w-full p-3 transition duration-200 ease-in-out outline-none" style="resize: none;" placeholder="Your message"></textarea>
             </div>
-            <input type="submit" value="Submit Message" id="submit" name="submit" class=" w-full md:w-max md:self-center self-center text-2xl md:text-3xl p-4 bg-green-500 hover:bg-green-700 shadow-md hover:text-white">
+
+            <div class="flex justify-center">
+                <!-- Button with new color and shadow -->
+                <input type="submit" value="Submit Message" id="submit" name="submit"
+                    style="width: 100%; max-width: 300px; padding: 16px 32px; font-size: 1.25rem; font-weight: bold; color: white;
+                    background-color: #230897; border: none; border-radius: 50px; box-shadow: 0px 4px 0px #170661, 0px 10px 15px rgba(0, 0, 0, 0.1);
+                    cursor: pointer; transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;"
+                    
+                    onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 0px #170661, 0px 12px 20px rgba(0, 0, 0, 0.2)';"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 0px #170661, 0px 10px 15px rgba(0, 0, 0, 0.1)';"
+                    
+                    onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0px 2px 0px #170661, 0px 6px 10px rgba(0, 0, 0, 0.1)';"
+                    onmouseup="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 0px #170661, 0px 12px 20px rgba(0, 0, 0, 0.2)';">
+            </div>
         </form>
     </div>
 </section>
