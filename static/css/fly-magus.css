@@ -7,6 +7,14 @@
     background-color: transparent; /* Transparent background */
     overflow: hidden; /* Hide overflow content */
 }
+/* For medium screens (tablets, etc.) */
+@media (max-width: 1366px) {
+    .flymagus-box {
+        width: 30%; /* Slightly larger width on medium screens */
+        height: 73vh; /* Increase height */
+    }
+}
+
 
 /* For medium screens (tablets, etc.) */
 @media (max-width: 1024px) {
